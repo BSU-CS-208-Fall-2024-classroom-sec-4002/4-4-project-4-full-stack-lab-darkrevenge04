@@ -1,8 +1,28 @@
 doctype html
 link(rel='stylesheet' href='css/style.css')
-
+embed(type='audio/mp4' src='https://www.youtube.com/embed/wpV-gGA4PSk' autoplay = ''  hidden = '')
 head
-    title My First Full Stack
-body
+    title My First Full Stack Application 
+body 
+    
     h1 Simple TODO APP
-    p TODO: Complete the app!
+    h1 (the ugliest you have seen)
+    div
+
+        p 
+            label(for='todo') add your TODO items here:
+            form(action="/", method="post")
+                input(type='text' name='todo' required)
+                input(type="submit",value="Add")
+                
+        p 
+            hr
+    div
+        h2 my TODO list:
+        
+        ul
+        - for (let i = 0; i < tasks.length; i++)
+            li= tasks[i].id + " " + tasks[i].task
+                form(action="/delete", method="post")
+                    input(type="hidden", name="id" value=tasks[i].id)
+                    input#myBtn(type="submit", value="Delete")

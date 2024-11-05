@@ -1,3 +1,48 @@
+html{
+    cursor: wait;
+}
+audio { 
+    display:none;
+}
+h1{
+    font-family: "Haettenschweiler";
+    font-size:  35px;
+    font-weight: 100;
+    margin-inline-start: 75%;
+}
+p{
+    color: yellow;
+}
 body{
-    background-color: hotpink;
+    background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3ZrNG0zZHpuemlvbjR3bTRwNzgwaXppcTlsa3Nkbjl3d28wYzE3dyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/wRJBGzHGd4b2h00nt6/giphy.webp');
+    background-size: cover;
+    margin-left: 10%;
+    margin-right: 17%;
+    color: greenyellow;
+}
+button{
+    background-color:red;
+    text-indent: 10%;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    position: relative;
+    left: 75%;
+    rotate: 50deg;
+}
+ul{
+    position: relative;
+    left: 33%;
+}
+input{
+    rotate:  -50deg;
+    position: relative;
+    left: 30%;
+}
+hr{
+    height: 24px;
+    margin-top: 10%;
+    width:100%;
+    background-color:black;
+}
+li{
+    font-size: 50px;
 }
