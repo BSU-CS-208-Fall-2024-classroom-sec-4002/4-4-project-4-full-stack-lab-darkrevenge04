@@ -7,6 +7,8 @@
 
 This project was incredibly difficult for me. while the front end and back end separately is straightforward alone in terms of how to get the ideas and desired outcome to correctly occur in a satisfactory manner. For some reason when I am doing both my code kept collapsing and running into issues even with the example code being used. One such example of this was the task array not being called correctly. Turns out it was simply a reference error that was made but this still took me hours to find and fix. A second issue that I was not able to fix was that the page was not auto refreshing when any additions or removals were made to the sql server. I am still unsure as to why this happened and searching for ages provided no answers. I will have to consult with the professor after submitting this to find out where I went wrong and were to fix this. I will update this section when I know what it was. Overall this is the hardest project for me and goes to show that full stack may not be for me. I may stick to backend coding.
 
+Upon having a meeting with the professor, I was able to rectify the refresh issue. All that I needed to do was call the get function again to update the page with the database change
+
 ## Known issues or Bugs
 
 The only known issue at the moment is that after and additions or deletions the page must be manually reloaded for the changes to be visually changed.

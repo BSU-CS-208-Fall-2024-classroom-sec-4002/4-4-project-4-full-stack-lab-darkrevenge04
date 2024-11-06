@@ -18,7 +18,7 @@ app.set('views', 'views')
 app.set('view engine', 'pug')
 app.use(express.urlencoded({ extended: false }))
 
-app.get('/', function (req, res) {
+app.get('/get', function (req, res) {
   //TODO You will need to do a SQL select here
   //TODO You will need to update the code below!
   const local = { tasks: [] }
@@ -46,6 +46,7 @@ app.post('/', function (req, res) {
   const stmt = db.prepare('INSERT INTO todo (task) VALUES (?)')
   stmt.run(req.body.todo)
   stmt.finalize()
+  res.redirect('/get');
 })
 
 
@@ -55,6 +56,7 @@ app.post('/delete', function (req, res) {
   const stmt = db.prepare('DELETE FROM todo where id = (?)')
   stmt.run(req.body.id)
   stmt.finalize()
+  res.redirect('/get');
   
 
 })
